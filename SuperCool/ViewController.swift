@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var CoolLogo: UIImageView!
+    @IBOutlet weak var CoolBG: UIImageView!
+    @IBOutlet weak var UnCoolButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +23,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func HideBttn(sender: AnyObject) {
+        CoolBG.hidden = false
+        CoolLogo.hidden = false
+        UnCoolButton.hidden = true
+   
+    }
 
 }
 
